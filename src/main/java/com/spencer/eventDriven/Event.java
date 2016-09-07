@@ -6,4 +6,9 @@ package com.spencer.eventDriven;
  *  事件标记接口
  */
 public interface Event {
+
+    public String getEventType();
+
+    public Object getObject();
+
 }

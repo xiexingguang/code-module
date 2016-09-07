@@ -16,7 +16,7 @@ public class Main {
             public void run() {
                 //执行业务操作比较耗时模拟4s
                 try {
-                    Thread.sleep(5000);
+                    Thread.sleep(50000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -25,7 +25,8 @@ public class Main {
             }
         }).start();
 
-        System.out.println(responseFuture.get(1000));
+        System.out.println("main 线程开始执行");
+        System.out.println(responseFuture.get(1));
 
     }
 
